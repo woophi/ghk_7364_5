@@ -9,14 +9,11 @@ import { Spinner } from '@alfalab/core-components/spinner/cssm';
 import { Steps } from '@alfalab/core-components/steps/cssm';
 import { Tag } from '@alfalab/core-components/tag/cssm';
 import { Typography } from '@alfalab/core-components/typography/cssm';
-import { CheckmarkCircleMIcon } from '@alfalab/icons-glyph/CheckmarkCircleMIcon';
 import { ChevronDownMIcon } from '@alfalab/icons-glyph/ChevronDownMIcon';
 import { ChevronUpMIcon } from '@alfalab/icons-glyph/ChevronUpMIcon';
 import { DocumentLinesLineMIcon } from '@alfalab/icons-glyph/DocumentLinesLineMIcon';
 import { PercentMIcon } from '@alfalab/icons-glyph/PercentMIcon';
 import { QuestionCircleLineMIcon } from '@alfalab/icons-glyph/QuestionCircleLineMIcon';
-import { ShieldMIcon } from '@alfalab/icons-glyph/ShieldMIcon';
-import { UmbrellaMIcon } from '@alfalab/icons-glyph/UmbrellaMIcon';
 import { Fragment, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import percentImg from './assets/percent.png';
@@ -51,24 +48,6 @@ const hiw = [
   {
     title: 'Получайте больше дохода',
     desc: 'По вкладу с повышенной ставкой и от инвестиций в ПДС',
-  },
-];
-
-const secs = [
-  {
-    title: 'Вклад застрахован',
-    subtitle: 'До 1 400 000 ₽ под защитой',
-    icon: <UmbrellaMIcon color="#000000" />,
-  },
-  {
-    title: 'Прозрачный доход',
-    subtitle: 'Ставка прописана в договоре — никаких скрытых условий',
-    icon: <CheckmarkCircleMIcon color="#000000" />,
-  },
-  {
-    title: 'Защита от импульсивных покупок',
-    subtitle: 'Не тратьте деньги на ненужные мелочи',
-    icon: <ShieldMIcon color="#000000" />,
   },
 ];
 
@@ -161,7 +140,6 @@ const btns = [
 
 const MIN_INVEST_SUM = 60_000;
 
-const docNumberPds = randomDocNumber();
 const docNumberVklad = randomDocNumber();
 const emailRu = randomEmailRu();
 
