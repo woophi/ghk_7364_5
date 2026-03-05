@@ -28,46 +28,19 @@ const container = style({
   flexDirection: 'column',
   gap: '1rem',
 });
-const containerB = style({
-  display: 'flex',
-  padding: '1rem',
-  flexDirection: 'column',
-  gap: '1rem',
-  backgroundColor: '#FFFFFF',
-  borderTopLeftRadius: '1rem',
-  borderTopRightRadius: '1rem',
-});
-const containerApp = style({
-  background: 'linear-gradient(153.31deg, #0922E3 4.46%, #269AF4 95.54%)',
-});
-
 const box = style({
   display: 'flex',
-  padding: '20px 20px 24px',
   flexDirection: 'column',
-  gap: '20px',
-  borderRadius: '1rem',
-  backgroundColor: '#EEEDFF',
+  padding: '1rem',
+  gap: '1rem',
+  borderRadius: '24px',
+  backgroundColor: '#F3F4F5',
 });
 
 const row = style({
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'space-between',
-});
-
-const cellBanner = style({
-  backgroundColor: '#F2F3F5',
-  borderRadius: '1rem',
-});
-
-const boxSlide = style({
-  display: 'flex',
-  padding: '12px',
-  borderRadius: '12px',
-  backgroundColor: '#FFFFFF',
-  width: '228px',
-  height: '80px',
+  gap: '12px',
 });
 
 const stepStyle = style({});
@@ -145,15 +118,33 @@ const box4 = style({
   textAlign: 'center',
 });
 
+const btnsContainer = style({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  maxWidth: '335px',
+  margin: '0 auto',
+  width: '100%',
+});
+
+const btnContainer = style({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '4px',
+  maxWidth: '76px',
+  textAlign: 'center',
+  alignItems: 'center',
+});
+
+const btmContent = style({
+  padding: 0,
+});
+
 export const appSt = {
   bottomBtn,
   container,
   box,
   row,
-  containerApp,
-  containerB,
-  cellBanner,
-  boxSlide,
   stepStyle,
   rowSb,
   bannerAccount,
@@ -163,4 +154,7 @@ export const appSt = {
   codeInput,
   codeInputItem,
   box4,
+  btnsContainer,
+  btnContainer,
+  btmContent,
 };
