@@ -174,7 +174,7 @@ export const App = () => {
   );
   useTimeout(
     () => {
-      window.gtag('event', '7364_sms_pds_deposit_step3', { var: 'var2' });
+      window.gtag('event', '7364_sms_pds_deposit_step3', { var: 'var5' });
 
       submit();
     },
